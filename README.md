@@ -11,6 +11,14 @@
 0. I created a static Java file for my user inputs for Shoprite. But, kept it hidden from GitHUb for my data privacy.
 1. Implement [Soft Asserts](https://www.softwaretestingmaterial.com/soft-assert/) so you can check multiple items.
 2. Implement [Explicit Waits](https://www.selenium.dev/documentation/en/webdriver/waits/) with Expected Conditions and WebDriverWaits. 
-	- This will ensure that you will start testing once the elements or properties display after loading.
+	- This will ensure that your driver will start testing once the elements or properties display after loading.
 3. Implement [Select](https://stackoverflow.com/questions/12940592/how-to-select-an-item-from-a-dropdown-list-using-selenium-webdriver-with-java) for inputting and checking Dropdown values
 	- This specifically helps for checking dropdown items.
+
+## Step 2: Implement Page Object Model
+1. Create a separate page object file that initializes the WebDriver and Explicit Wait time.
+	- I used only ChromeDriver. You can create different drivers and set it as Page object Factory. 
+	- I set the explicit wait time for 10 seconds 
+2. Implement [FindBy annotation](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/FindBy.html).
+	- This [improves the Page Object Pattern](https://stackoverflow.com/questions/18436102/selenium-findby-vs-driver-findelement) and makes it easier for maintenance
+	- When you use FindBy, you have to use PageFactory to initialize web elements
