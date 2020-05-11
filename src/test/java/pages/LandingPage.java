@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import data.ShopriteTime;
+
 public class LandingPage {
 
 	final WebDriver driver;
@@ -111,6 +113,13 @@ public class LandingPage {
 		setDropdownHour(hour);
 		setDropdownMin(min);
 		setDropdownMeridian(meridian);
+	}
+	
+	public ShopriteTime getInputTime() {
+		return new ShopriteTime(
+				getDropdownHour(),
+				getDropdownMin(),
+				getDropdownMeridian());
 	}
 	
 	public void endSession(){

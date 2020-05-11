@@ -22,3 +22,6 @@
 2. Implement [FindBy annotation](https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/support/FindBy.html).
 	- This [improves the Page Object Pattern](https://stackoverflow.com/questions/18436102/selenium-findby-vs-driver-findelement) and makes it easier for maintenance
 	- When you use FindBy, you have to use PageFactory to initialize web elements
+3. Implement a Data Transfer Object for Time. I kept mine's separate in the 'data' directory.
+	- This will make our tests more readable
+	- This will remove the need for Soft Asserts
