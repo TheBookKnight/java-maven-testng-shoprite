@@ -1,12 +1,12 @@
-package java_maven_testng_shoprite.shoprite;
+package tests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-import java_maven_testng_shoprite.shoprite.util.UtilInput;
-import page.LandingPage;
+import pages.LandingPage;
+import util.UtilInput;
 
 import static org.testng.Assert.*;
 
